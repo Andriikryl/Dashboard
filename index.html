@@ -12,36 +12,62 @@
           <aside class="aside__container">
             <div class="aside__logo">
               <img src="public/logo.svg" alt="logo" />
+              <span class="logo__text">v.01</span>
             </div>
             <nav class="aside__nav">
               <ul role="list" class="nav__list">
                 <li class="list__item">
+                  <img class="item__image" src="public/asideNav/Dashboard.svg" alt="">
                   <a class="item__link" href="#">Dashboard</a>
+                  <img class="item__image-rigth" src="public/asideNav/chevron-right.svg" alt="">
                 </li>
                 <li class="list__item">
+                  <img class="item__image" src="public/asideNav/product.svg" alt="">
                   <a class="item__link" href="#">Product</a>
+                  <img class="item__image-rigth" src="public/asideNav/chevron-right.svg" alt="">
                 </li>
                 <li class="list__item">
+                  <img class="item__image" src="public/asideNav/customers.svg" alt="">
                   <a class="item__link" href="#">Customers</a>
+                  <img class="item__image-rigth" src="public/asideNav/chevron-right.svg" alt="">
                 </li>
                 <li class="list__item">
+                  <img class="item__image" src="public/asideNav/income.svg" alt="">
                   <a class="item__link" href="#">Income</a>
+                  <img class="item__image-rigth" src="public/asideNav/chevron-right.svg" alt="">
                 </li>
                 <li class="list__item">
+                  <img class="item__image" src="public/asideNav/promote.svg" alt="">
                   <a class="item__link" href="#">Promote</a>
+                  <img class="item__image-rigth" src="public/asideNav/chevron-right.svg" alt="">
                 </li>
                 <li class="list__item">
+                  <img class="item__image" src="public/asideNav/help.svg" alt="">
                   <a class="item__link" href="#">Help</a>
+                  <img class="item__image-rigth" src="public/asideNav/chevron-right.svg" alt="">
                 </li>
               </ul>
             </nav>
+            <div class="user__info">
+              <img class="user__image" src="public/asideAvatar/avatar.jpg" alt="avart image">
+              <div>
+                <p class="user__name">Evano</p>
+                <p class="user__position">Project Manager</p>
+              </div>
+            </div>
           </aside>
           <div class="main__container">
             <h1 class="main__title">Hello Evano 👋🏼,</h1>
             <div class="table__container">
-              <div class="table__header">
-                <h2 class="table__title">All Customers</h2>
-                <p class="table__subtitle">Active Members</p>
+              <div class="flex__box">
+                <div class="table__header">
+                  <h2 class="table__title">All Customers</h2>
+                  <p class="table__subtitle">Active Members</p>
+                </div>
+                <form action="#" class="form">
+                  <label for="search" class="search__label | visualy__hidden">Search</label>
+                  <input placeholder="Search" type="text" id="search" class="search__input">
+                </form>
               </div>
               <table class="table">
                 <tr class="table__header-row">
@@ -120,6 +146,19 @@
               </table>
               <div class="main__footer">
                 <p class="footer__subtext">Showing data 1 to 8 of 256K entries</p>
+                <ul class="buttons__group" role="list">
+                  <li class="group__item"><button class="item__button">
+                    <span class="visualy__hidden">Previous</span>
+                    <img src="public/buttons/prev.svg" alt="">
+                  </button></li>
+                  <li class="group__item"><button class="item__button">1</button></li>
+                  <li class="group__item"><button class="item__button">2</button></li>
+                  <li class="group__item"><button class="item__button">3</button></li>
+                  <li class="group__item"><button class="item__button">4</button></li>
+                  <li class="group__item">...</li>
+                  <li class="group__item"><button class="item__button">40</button></li>
+                  <li><button class="item__button"><span class="visualy__hidden">next</span> <img src="public/buttons/next.svg" alt=""></button></li>
+                </ul>
               </div>
             </div>
           </div>
