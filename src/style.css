@@ -8,9 +8,6 @@ html, body {
     height: 100%;
   }
 
-main{
-  z-index: 20;
-}
 /* Prevent font size inflation */
 html {
   -moz-text-size-adjust: none;
@@ -79,7 +76,7 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-.wrapper{
+/* .wrapper{
     --gap: clamp(1rem, 6vw, 3rem);
     --full: minmax(var(--gap), 1fr);
     --content: min(90ch, 100% - var(--gap) * 2);
@@ -108,4 +105,25 @@ textarea:not([rows]) {
   .full {
     grid-column: full;
   }
- 
+  */
+
+
+  .wrapper {
+    --space: 71px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space);
+    border: 1px solid tomato;
+  }
+  .main__container {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 50%;
+    border: 1px solid tomato;
+  }
+  .aside__container {
+    --width: 306px;
+    flex-basis: var(--width);
+    flex-grow: 1;
+    border: 1px solid tomato;
+  }
